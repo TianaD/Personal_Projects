@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- box icons - icons that can be added to pages via web component or font --> 
+    <!-- box icons - icons that can be added to pages via web component or font -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- custom css -->  
-    <link rel="stylesheet" href="style.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="altStyle.css">
 
     <title>Personal Portfolio Website | Tiana Davis</title>
 
@@ -30,6 +30,7 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
+    <!-- add drop down to services tab  -->
 </header>
 
 <body>
@@ -40,38 +41,194 @@
             <h3>Hello, It's Me</h3>
             <h1>Tiana Davis</h1>
             <h3>And I am a <span>Frontend Developer</span></h3>
-            <p>Lorem ipsum dolor sit amet. Cum blanditiis voluptas et praesentium commodi ab rerum iure est autem voluptatem ex exercitationem voluptatem eos architecto consequatur.</p>
+            <p>Lorem ipsum dolor sit amet. Cum blanditiis voluptas et praesentium commodi ab rerum iure est autem
+                voluptatem ex exercitationem voluptatem eos architecto consequatur.</p>
             <div class="social-media">
                 <!-- <a href="#"><i class='bx bxl-twitter' ></i></a> -->
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-tiktok' ></i></a>
-                <a href=""><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+                <a href=""><i class='bx bxl-linkedin'></i></a>
             </div>
             <a href="#" class="btn">Download CV</a>
         </div>
 
-
     </section>
-        <div class="home-img">
-            <img src="./assets/PersonalImage-SittingWithHandOnFaceAgainstTableInB&WDressCroppedArm.png" alt="">
-        </div>    
 
-        <!-- about section design -->
-        <section class="about" id="about">
-            <div id="about-content">
-                <h2 class="heading">About <span>Me</span></h2>
-                <h3>Frontend Developer</h3>
-                <p>Lorem ipsum dolor sit amet. Ad accusamus ipsam aut itaque aperiam aut galisum voluptas ut accusantium consectetur ut doloribus omnis id aliquam magnam et exercitationem sint. At ducimus eaque et vero consequatur aut temporibus sapiente aut praesentium nemo ut dolores neque in quisquam maxime. Quo labore fugiat ut repellat odit sit quam distinctio.</p>
+    <div class="home-img">
+        <img src="#" alt="">
+    </div>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="#" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit amet. Ad accusamus ipsam aut itaque aperiam aut galisum voluptas ut accusantium
+                consectetur ut doloribus omnis id aliquam magnam et exercitationem sint. At ducimus eaque et vero
+                consequatur aut temporibus sapiente aut praesentium nemo ut dolores neque in quisquam maxime. Quo labore
+                fugiat ut repellat odit sit quam distinctio.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Et molestiae quia et enim quidem qui officia repellendus sit obcaecati quod. Non rerum optio in
+                    repudiandae voluptates aut dolores delectus et fugit iusto ut omnis officia ex nihil perferendis.
+                </p>
                 <a href="#" class="btn">Read More</a>
             </div>
-        </section>
 
-<!-- custom js -->  <script src="./app.js"></script>
+
+            <div class="services-box">
+                <i class='bx bx-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>Et molestiae quia et enim quidem qui officia repellendus sit obcaecati quod. Non rerum optio in
+                    repudiandae voluptates aut dolores delectus et fugit iusto ut omnis officia ex nihil perferendis.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+
+            <div class="services-box">
+                <i class='bx bxs-t-shirt'></i>
+                <h3>Wardrobe Styling</h3>
+                <p>Et molestiae quia et enim quidem qui officia repellendus sit obcaecati quod. Non rerum optio in
+                    repudiandae voluptates aut dolores delectus et fugit iusto ut omnis officia ex nihil perferendis.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- portfolio section design  -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./assets/drippinOnStairs.jpg" alt="image for project link">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
+                        animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
+                        doloribus laudantium, iusto vero?</p>
+                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./assets/placeholder image with x through it.jpg" alt="image for project link">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
+                        animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
+                        doloribus laudantium, iusto vero?</p>
+                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./assets/placeholder image with x through it.jpg" alt="image for project link">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
+                        animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
+                        doloribus laudantium, iusto vero?</p>
+                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./assets/placeholder image with x through it.jpg" alt="image for project link">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
+                        animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
+                        doloribus laudantium, iusto vero?</p>
+                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./assets/placeholder image with x through it.jpg" alt="image for project link">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
+                        animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
+                        doloribus laudantium, iusto vero?</p>
+                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./assets/placeholder image with x through it.jpg" alt="image for project link">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
+                        animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
+                        doloribus laudantium, iusto vero?</p>
+                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section design  -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>ME</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Adress">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+
+    <!-- footer design  -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Tiana Davis | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bxs-up-arrow-circle'></i></a>
+        </div>
+    </footer>
+
+
+
+
+    <!-- custom js -->
+    <script src="./altApp.js"></script>
 
 
 </body>
 
 
-<!-- 20 -->
+
 </html>
