@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
+
 /*----- VARIABLES CSS -----*/
 /*Varibles en general*/
 :root {
@@ -28,7 +29,9 @@
 }
 
 /*----- BASE -----*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -39,7 +42,8 @@ body {
   overflow: hidden;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
   font-weight: initial;
 }
@@ -172,13 +176,12 @@ p {
 }
 
 .home__img .img-top {
-    display: none;
-    position: absolute;
-    /* -webkit-transition: transform .5s; */
+  display: none;
+  position: absolute;
 }
 
-.home__img:hover .img-top{
-    display: inline;
+.home__img:hover .img-top {
+  display: inline;
 }
 
 
@@ -222,31 +225,39 @@ p {
   body {
     margin: 0;
   }
+
   .l-header {
     background-color: transparent;
   }
+
   .nav {
     display: grid;
     grid-template-columns: 3fr 4fr 1fr;
   }
+
   .nav__list {
     display: flex;
   }
+
   .nav__item {
     margin-right: 5rem;
     margin-bottom: 0;
   }
+
   .nav__toggle {
     display: none;
   }
+
   .home {
     grid-template-columns: 4fr 3fr;
     grid-template-rows: 1fr;
     height: 100vh;
   }
+
   .home__primary {
     justify-content: center;
   }
+
   .home__img img {
     position: absolute;
     width: 500px;
@@ -256,12 +267,15 @@ p {
     bottom: 0;
     margin: auto;
   }
+
   .home__scroll {
     color: var(--white-color);
   }
+
   .home__scroll::after {
     background-color: var(--white-color);
   }
+
   .home__year {
     writing-mode: vertical-rl;
     margin-left: 5rem;
@@ -273,6 +287,7 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+
   .nav {
     height: calc(3.5rem + 1.5rem);
   }
