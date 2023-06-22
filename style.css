@@ -108,6 +108,19 @@ section {
     transition: .3s;
 }
 
+.DarkMode {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: var(--second-background-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--second-background-color);
+    font-size: 1.6rem;
+    color: var(--background-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
 #menu-icon{
     font-size: 3.6rem;
     color: var(--text-color);
