@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 /* "*" selects all elements */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,13 +16,14 @@
     --background-color: #fbfafa;
     --second-background-color: #FEACB9;
     --text-color: #c48b6d;
-    --main-color: #b0663f; /*my skin tone, period*/
+    --main-color: #b0663f;
+    /*my skin tone, period*/
     /* under the brow --background-color: #c48b6d; */
     /* the pinkest of my nail color rgba(227,179,164,251); */
     /* the lightest gold in my hair jewelry #e3d9c6 */
     /* the lightest of my earring #fbfafa */
 
-/* 
+    /* 
 --background-color: #EBE8E2;
 --background-color:#FEACB9;
 
@@ -81,11 +82,12 @@ section {
     background: var(--background-color);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 100;
 }
 
 /* current says "portfolio" */
-.logo { 
+.logo {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
@@ -121,23 +123,25 @@ section {
     transition: .5s ease;
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
 }
 
 /* picture of me */
-.home-img{
-    position: fixed;
+.home-img {
+    /* position: fixed;
     bottom: 0;
     left: 0;
-    padding: 10rem 9% 0rem;
+    padding: 10rem 9% 0rem; */
+    width: 35vw;
 }
 
 .home-img img {
     /* width: 37vw; */
     width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
 }
 
 .home {
@@ -347,13 +351,15 @@ span {
 
 .portfolio-layer h4 {
     font-size: 3rem;
-    color: #323946; /* remove color after images are added */
+    color: #323946;
+    /* remove color after images are added */
 }
 
 .portfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
-    color: #323946; /* remove color after images are added */
+    color: #323946;
+    /* remove color after images are added */
 }
 
 .portfolio-layer a {
@@ -462,6 +468,7 @@ span {
     .header {
         padding: 2rem 3%;
     }
+
     section {
         padding: 10rem 3% 2rem;
     }
@@ -475,6 +482,7 @@ span {
     #menu-icon {
         display: block;
     }
+
     .navbar {
         position: absolute;
         top: 100%;

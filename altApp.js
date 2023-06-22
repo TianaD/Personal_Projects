@@ -1,4 +1,4 @@
-// ============================================ toggle icon navbar ============================================ //
+// ====================================================== toggle icon navbar ====================================================== //
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -8,7 +8,7 @@ menuIcon.onclick = () => {
 };
 
 
-// ============================================ scroll section active link ============================================ //
+// ====================================================== scroll section active link ====================================================== //
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -20,7 +20,7 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 // removes highlight color from previous page tab 
                 links.classList.remove('currentPage');
@@ -32,7 +32,7 @@ window.onscroll = () => {
 
 
 
-// ============================================ sticky navbar ============================================ //
+    // ====================================================== sticky navbar ====================================================== //
 
 
     let header = document.querySelector('header');
@@ -41,15 +41,15 @@ window.onscroll = () => {
 
 
 
-// ============================================ remove toggle icon and navbar when navbar link is clicked (scroll) ============================================ //
+    // ============================================ remove toggle icon and navbar when navbar link is clicked (scroll) ============================================ //
 
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 
 };
 
 
-// ============================================ scroll reveal ============================================ //
+// ====================================================== scroll reveal ====================================================== //
 ScrollReveal({
     // reset:true,
     distance: '80px',
@@ -57,18 +57,20 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', {origin: 'top'})
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 'bottom'})
-ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'})
-ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'})
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' })
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' })
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' })
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' })
+
+
+// // ====================================================== typed js ====================================================== //
+const typed = new Typed('.mulitple-text', {
+    strings: ['Frontend Developer', 'Backend Developer', 'Graphic Designer', 'Fashion Icon'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
 
 
 
-
-
-
-
-
-
-// https://www.youtube.com/watch?v=Tkp3FDgOueM
-// 01:10:00

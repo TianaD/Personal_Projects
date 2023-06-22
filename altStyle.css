@@ -87,6 +87,7 @@ section {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    text-align: center;
 }
 
 #menu-icon{
@@ -97,10 +98,11 @@ section {
 
 /* picture of me */
 .home-img{
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
     left: 0;
-    padding: 10rem 9% 0rem;
+    padding: 10rem 9% 0rem; */
+    width: 35vw;
 }
 
 .home-img img {
