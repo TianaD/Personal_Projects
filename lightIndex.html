@@ -11,7 +11,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- custom css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./lightStyle.css">
 
     <title>Personal Portfolio Website | Tiana Davis</title>
 
@@ -25,7 +25,7 @@
 
     <nav class="navbar">
 
-        <a href="altIndex.html" class="DarkMode">DarkMode</a>
+        <a href="./darkIndex.html" class="btn">DarkMode</a>
         <a href="#home" class="currentPage">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -47,7 +47,7 @@
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Tiana Davis</h1>
-            <h3>And I am a <span>Frontend Developer</span></h3>
+            <h3>And I am a <span class="multiple-text">Frontend Developer</span></h3>
             <p>Lorem ipsum dolor sit amet. Cum blanditiis voluptas et praesentium commodi ab rerum iure est autem
                 voluptatem ex exercitationem voluptatem eos architecto consequatur.</p>
             <div class="social-media">
@@ -64,7 +64,7 @@
             <img src="assets/ImageWithBrownBackgroundAnd3TierStyle.png" alt="">
             <!-- <img src="#" alt=""> -->
         </div>
-        
+
     </section>
 
 
@@ -127,7 +127,7 @@
 
     <!-- portfolio section design  -->
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
+        <h2 class="heading">Latest <span>Projects</span></h2>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
@@ -137,7 +137,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
                         animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
                         doloribus laudantium, iusto vero?</p>
-                    <a href="landingPage/index.html"><box-icon name='link-external'></box-icon></a>
+                    <a href="landingPage/index.html"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
@@ -148,18 +148,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
                         animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
                         doloribus laudantium, iusto vero?</p>
-                    <a href="#"><box-icon name='link-external'></box-icon></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                g <img src="./assets/placeholder image with x through it.jpg" alt="image for project link">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
-                        animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
-                        doloribus laudantium, iusto vero?</p>
-                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
@@ -170,7 +159,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
                         animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
                         doloribus laudantium, iusto vero?</p>
-                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
@@ -181,7 +170,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
                         animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
                         doloribus laudantium, iusto vero?</p>
-                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
@@ -192,7 +181,18 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
                         animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
                         doloribus laudantium, iusto vero?</p>
-                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./assets/placeholder image with x through it.jpg" alt="image for project link">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia rerum totam repudiandae
+                        animi! Excepturi error ad eveniet fuga ea expedita, cupiditate corrupti. Aperiam nulla non
+                        doloribus laudantium, iusto vero?</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
@@ -209,12 +209,17 @@
                 <input type="text" placeholder="Full Name">
                 <input type="email" placeholder="Email Adress">
             </div>
+
             <div class="input-box">
                 <input type="number" placeholder="Mobile Number">
                 <input type="text" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+
+            <div class="input-box2">
+               <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+              <input type="submit" value="Send Message" class="btn">
+            </div>
+
         </form>
     </section>
 
@@ -231,10 +236,16 @@
     </footer>
 
 
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <!-- typed js  -->
+    <script src="./typedScipt.js"></script>
 
 
     <!-- custom js -->
-    <script src="./App.js"></script>
+    <script src="./app.js"></script>
 
 
 </body>

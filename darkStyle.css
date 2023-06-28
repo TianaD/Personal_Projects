@@ -13,48 +13,10 @@
 }
 
 :root {
-    --background-color: #fbfafa;
-    --second-background-color: #FEACB9;
-    --text-color: #c48b6d;
-    --main-color: #b0663f;
-    /*my skin tone, period*/
-    /* under the brow --background-color: #c48b6d; */
-    /* the pinkest of my nail color rgba(227,179,164,251); */
-    /* the lightest gold in my hair jewelry #e3d9c6 */
-    /* the lightest of my earring #fbfafa */
-
-    /* 
---background-color: #EBE8E2;
---background-color:#FEACB9;
-
---background-color:#8F9491;
-
---background-color:#fbf0f3;
-
---background-color:#F2F4FF;
-
---background-color:#BEC5AD;
-
-
---background-color:#D496A7;
---background-color:#290628;
---background-color: #F8F0FB;
-
-
---background-color:#F1DEDE;
---background-color:#D496A7;
---background-color:#5D576B;
---background-color:#6CD4FF;
---background-color:#FE938C;
-
-
---background-color: #FFD6E9;
---background-color: #FFBCDA;
---background-color: #E79898;
---background-color: #946656;
---background-color: #c79274; */
-
-
+    --background-color: #1f242d;
+    --second-background-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
 }
 
 html {
@@ -86,8 +48,8 @@ section {
     z-index: 100;
 }
 
-.header.sticky  {
-    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+.header.sticky {
+    border-bottom: .1rem solid var(--background-color);
 }
 
 /* current says "portfolio" */
@@ -96,7 +58,6 @@ section {
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
-    font-variant: small-caps;
 }
 
 /* "home"  "about" "services" "portfolio" "contact" */
@@ -104,6 +65,7 @@ section {
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
+    transition: .3s;
 }
 
 /* when a nav link is moused over, the font color will change */
@@ -114,18 +76,28 @@ section {
     transition: .3s;
 }
 
-.DarkMode {
+/* .LightMode {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: var(--second-background-color);
+    background-color: var(--main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--second-background-color);
+    box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
-    color: var(--background-color);
+    color: var(--second-background-color);
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    text-align: center;
+} */
+
+.navbar .btn {
+    color: var(--second-background-color);
 }
+
+.navbar .btn:hover {
+    color: var(--text-color);
+}
+
 
 #menu-icon {
     font-size: 3.6rem;
@@ -144,8 +116,22 @@ section {
 
 .home-img img {
     /* width: 37vw; */
-    width: 37vw;
+    width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .home {
@@ -166,7 +152,7 @@ section {
 }
 
 span {
-    color: var(--second-background-color);
+    color: var(--main-color);
 }
 
 /* "Tiana Davis" text */
@@ -190,7 +176,7 @@ span {
     height: 4rem;
     background: transparent;
     border: .2rem solid var(--main-color);
-    border-radius: 45%;
+    border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
@@ -206,11 +192,11 @@ span {
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: var(--second-background-color);
+    background-color: var(--main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--second-background-color);
+    box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
-    color: var(--background-color);
+    color: var(--second-background-color);
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
@@ -225,15 +211,8 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-color: var(--background-color);
+    background-color: var(--second-background-color);
 }
-
-
-/* i can add a dif image to the right side of the page for the scroll down - about me */
-
-/* i can change the background color of the page on about me */
-
-/* i could also make my pic the background image */
 
 .about-img img {
     width: 35vw;
@@ -355,14 +334,14 @@ span {
 
 .portfolio-layer h4 {
     font-size: 3rem;
-    color: #fbfafa;
+    color: #323946;
     /* remove color after images are added */
 }
 
 .portfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
-    color: #fbfafa;
+    color: #323946;
     /* remove color after images are added */
 }
 
@@ -372,7 +351,7 @@ span {
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background: var(--text-color);
+    /* background: var(--text-color); */
     border-radius: 50%;
 }
 
@@ -409,6 +388,10 @@ span {
     margin: .7rem 0;
 }
 
+.contact form .input-box ::placeholder {
+    color: var(--text-color);
+}
+
 .contact form .input-box input {
     width: 49%;
 
@@ -418,6 +401,10 @@ span {
     resize: none;
 }
 
+.contact form .input-box2 ::placeholder {
+    color: var(--text-color);
+}
+
 .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
@@ -425,7 +412,7 @@ span {
 
 
 
-/* footer design  */
+/* ============================================ footer design ============================================ */
 
 .footer {
     display: flex;
@@ -460,7 +447,7 @@ span {
 }
 
 
-/* Responsive Design */
+/* ============================================ Responsive Design ============================================ */
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
     html {
@@ -475,6 +462,18 @@ span {
 
     section {
         padding: 10rem 3% 2rem;
+    }
+
+    .services {
+        padding-bottom: 7rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
     }
 
     .footer {
@@ -496,11 +495,92 @@ span {
         background: var(--background-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active {
+        /* navbar disappears on x click */
+        display: block;
+
     }
 
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about-img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 617px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vw;
+    }
+
+    .about-img img {
+        width: 90vw;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+
     }
 }
