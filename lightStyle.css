@@ -60,6 +60,7 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    user-select: none;
 }
 
 body {
@@ -639,7 +640,8 @@ span {
 
 @media print {
     html,
-    body
+    body,
+    image
     {
     display:none
     }
