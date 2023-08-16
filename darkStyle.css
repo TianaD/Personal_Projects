@@ -583,4 +583,13 @@ span {
         margin-top: 2rem;
 
     }
+
+    @media print {
+        html,
+        body
+        {
+        display:none
+        }
+    
+    }
 }
