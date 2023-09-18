@@ -126,6 +126,7 @@ p {
 .nav__logo {
   color: var(--white-color);
   font-size: 20px;
+  margin-right: 5px;
 }
 
 .nav__toggle {
@@ -137,6 +138,21 @@ p {
   font-size: 1.3rem;
   text-align: right;
 }
+
+.nav__icon-home {
+  color: var(--white-color);
+  font-size: 1.3rem;
+  margin-right: 100px;
+  /* margin-left: 20px; */
+}
+
+.nav__icon-left{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+
+
 
 /*Aparecer menu*/
 .show {
